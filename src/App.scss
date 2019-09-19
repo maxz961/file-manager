@@ -1,0 +1,91 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f0f0f0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        color: #3688d4;
+        padding: 10px;
+        div {
+            padding: 2px;
+            border-bottom: 1px solid transparent
+        }
+
+        div:nth-child(2) {
+            margin-left: 10px;
+        }
+
+        div:hover {
+            border-bottom: 1px solid #3688d4;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 100%;
+        }
+    }
+    &__folder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 120px;
+    margin: 15px;
+    color: rgba(0,0,0,.72);
+
+    &__icon {
+        svg {
+            font-size: 6rem;
+            path {
+                color: rgb(143, 143, 143);
+            }
+        }
+    }
+
+    &__text {
+        margin-top: -15px;
+        font-size: 26px;
+    }
+}
+
+.folder {
+    &.active {
+        background: #d7d7d7;
+        border-radius: 5px;
+    } 
+}
+
+.dialog {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.Container__wrapper .hiden,
+.hiden {
+    display: none;
+}
