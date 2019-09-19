@@ -217,7 +217,7 @@ const MainFolder = ({
         <Fragment>
         <div className={`Container__wrapper ${!visibleMenu && 'hiden'}`}>
             <div className={`Container__nav ${!visibleMenu && 'hiden'}`}>
-                <div onClick={() => clickLevelUp(oldFolders, false)}>На уровень верх</div>
+                <div onClick={() => clickLevelUp(false)}>На уровень верх</div>
                 <div onClick={() => goToBackFolder()}>Назад</div>
             </div>
             <div id={`${path}`} className={`Container__input ${!visibleMenu && 'hiden'}`}>
